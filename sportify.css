@@ -1,0 +1,217 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    display:inline-block ;
+    border: 2px solid black;
+}
+
+#container-1{
+position: sticky;
+
+top: 0%;
+height: 745px;
+width: 18%;
+background-color: black;
+}
+#container-2{
+    position: fixed;
+    top: 0px;
+    width: 82%;
+    height: 75px;
+    background-color: black;
+    padding: 10px 0px ;
+}
+#container-3{
+    position:absolute;
+    top: 80px;
+    width:81.5%;
+    height:665px;
+    background-color: #17181a;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.song-box{
+    display: flex;
+    /* border: 2px solid red; */
+    height: auto;
+    flex-wrap: wrap;
+    padding: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.song-cover{
+    /* border: 2px solid red; */
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+}
+
+.song-cover:hover{
+    cursor: pointer;
+    text-decoration:underline;
+    color: antiquewhite;
+}
+.cover{
+    /* border: 1px solid yellow; */
+    width: auto;
+    height: 157px;
+}
+.song-details{
+    position: relative;
+    display: flex;
+    width: auto;
+    /* border: 1px solid yellow; */
+    height: 40px;
+    color: aliceblue;
+    font-size: large;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+.sportify{
+    /* border: 2px solid yellow; */
+    width: auto;
+    height: 80px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    box-sizing: border-box;
+    font-size:1.5rem;
+    color: white;
+    font-weight:900;
+
+}
+
+.options{
+    display: flex;
+    padding: 0px 30px;
+    margin-top: 10px;
+    color: white;
+    align-items: center;
+}
+
+.options img{
+    margin-right:10px ;
+}
+
+.options button{
+    background-color: black;
+    border: 0px;
+    color: white;
+    padding: 5px;
+}
+
+.options button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+
+.psd{
+   
+    width: 650px;
+    position: relative;
+    height: 50px;
+    
+    left: 47%;
+    grid-template-columns: 1fr 1fr 1fr 1.6fr 1fr;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    
+}
+
+.psd button{
+    background-color: black;
+    color: white;
+    font-size: large;
+    border: 0px;
+    font-weight: 600;
+    margin: 0px 10px;
+    /* border: 2px solid yellow; */
+    
+    
+}
+
+.psd button span:hover{
+    cursor: pointer;
+    color: rgb(207, 207, 207);
+    text-decoration:underline;
+}
+
+#login{
+    padding-left: 85px;
+}
+
+.timeline{
+
+    position: fixed;
+    bottom: 0px;
+    height: 100px;
+    
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    
+}
+
+.timeline img{
+    margin-right: 12px;
+}
+
+#my-progress-bar{
+    width: 80vw;
+}
+#my-progress-bar:hover{
+    cursor: pointer;
+}
+.range{
+    display: flex;
+}
+
+.icons{
+    position: relative;
+    bottom: 20px ;
+    left: 50px;
+}
+
+.icons:hover{
+    cursor: pointer;
+}
+
+@media (min-width:1316px) and (max-width:1432px) {
+    .psd{
+      left: 44%;
+    }
+}
+
+@media (min-width:1192px) and (max-width:1316px) {
+    .psd{
+      left: 40%;
+    }
+}
+
+@media (max-width:1192px) {
+    .psd{
+      left: 30%;
+    }
+    #container-1{
+        height: 1160px;
+    }
+    #container-3{
+        height: 1080px;
+    }
+
+}
